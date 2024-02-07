@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #FFF;
+    --gray-100: #AFAFAF;
+    --gray-200: #525252; //divisor
+    --gray-700: #15171b; //background-header
+    --gray-900: #111113; //background-body
+
+    --blue-900: #1FA4E5;
+    --yellow-500: #FFBE16;
+}
+body {
+    background: var(--gray-900); //CTA buttons
+}
+body, input, textarea, select, button {
+    font-size: 400 1rem 'Poppins', sans-serif; //1rem - 16px;
+}
+button {
+    cursor: pointer;
+}
+
+a {
+   
+    color: inherit;  //se o elemento pai do link tiver uma cor de texto específica, o link também terá essa cor. //Se não for especificada uma cor para o elemento pai, a cor padrão do texto será aplicada.
+    text-decoration: none; 
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%; //15px;
+    }
+}
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%; //14px;
+    }
+}
